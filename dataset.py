@@ -1,4 +1,4 @@
-import glob2 as glob
+import glob2
 import cv2
 import numpy as np
 import torch
@@ -114,13 +114,13 @@ class TestDeTextDataset(Dataset):
 
 def get_loaders():
 
-    x_train=glob.glob(C.train_x)
-    y_train=glob.glob(C.train_y)
-    mask_train=glob.glob(C.train_mask)
+    x_train=glob2.glob(C.train_x)
+    y_train=glob2.glob(C.train_y)
+    mask_train=glob2.glob(C.train_mask)
 
-    x_test=glob.glob(C.test_x)
-    y_test=glob.glob(C.test_y)
-    mask_test=glob.glob(C.mask_test)
+    x_test=glob2.glob(C.test_x)
+    y_test=glob2.glob(C.test_y)
+    mask_test=glob2.glob(C.mask_test)
 
     train_ds = DeTextDataset(x_train, y_train, 
     mask_train, 
