@@ -3,6 +3,7 @@ import cv2
 from PIL import Image, ImageDraw
 import albumentations as A
 import math
+import random
 
 
 def poly_to_mask(poly):
