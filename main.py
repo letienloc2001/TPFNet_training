@@ -4,7 +4,7 @@ from model import TFPNet
 from losses import *
 import torch
 from dataset import *
-
+from train import *
 
 def main():
     epochs=C.epochs

@@ -2,6 +2,7 @@ from tqdm import tqdm
 from cfg import Config as C
 from utils import *
 from ssim import ssim
+import torch
 
 def train(model, epochs, train_loader, test_loader, optimizer, critean):
     for epoch in range(epochs, 500):
