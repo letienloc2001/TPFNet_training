@@ -23,7 +23,7 @@ class Config:
     batch_size = 8
     epochs=400
     saved_model_path = 'saved_model/'
-    num_worker=3
+    num_worker=1
     lr=1e-4
 
     
