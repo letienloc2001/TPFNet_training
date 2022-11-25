@@ -120,7 +120,7 @@ def get_loaders():
 
     x_test=glob2.glob(C.test_x)
     y_test=glob2.glob(C.test_y)
-    mask_test=glob2.glob(C.mask_test)
+    mask_test=glob2.glob(C.test_mask)
 
     train_ds = DeTextDataset(x_train, y_train, 
     mask_train, 
