@@ -4,7 +4,7 @@ from utils import *
 from ssim import ssim
 import torch
 
-def train(model, epochs, train_loader, test_loader, optimizer, critean):
+def train(model, epochs, train_loader, test_loader, optimizer, critean, device):
     for epoch in range(epochs, 500):
         print('Epoch: {}'.format(epoch))
         l_train = []
