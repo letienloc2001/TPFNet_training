@@ -1,4 +1,4 @@
-import glob2
+import glob2 as glob
 import cv2
 import numpy as np
 import torch
