@@ -131,7 +131,7 @@ def get_loaders():
     a=False, test=True)
 
 
-    train_loader = DataLoader(train_ds, batch_size=C.batch_size, num_workers=C.num_worker, shuffle=True)
+    train_loader = DataLoader(train_ds, batch_size=C.batch_size, num_workers=C.num_worker, shuffle=False)
     test_loader = DataLoader(test_ds, batch_size=C.batch_size, num_workers=C.num_worker, shuffle=False)
 
     return train_loader, test_loader
