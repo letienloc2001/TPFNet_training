@@ -6,7 +6,7 @@ import torch
 from dataset import *
 
 
-def main()
+def main():
     epochs=C.epochs
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     net = TFPNet()

@@ -115,7 +115,7 @@ def get_loaders():
 
     x_train=glob.glob(C.train_x)
     y_train=glob.glob(C.train_y)
-    mask_trian=glob.glob(C.train_mask)
+    mask_train=glob.glob(C.train_mask)
 
     x_test=glob.glob(C.test_x)
     y_test=glob.glob(C.test_y)
