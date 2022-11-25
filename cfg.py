@@ -1,12 +1,12 @@
 class Config:
     # paths for synthetic train dataset
-    train_x_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-EnsText/syn_train/img/*.png'
-    train_y_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-EnsText/syn_train/label/*.png'
-    train_mask_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-EnsText/train/all_gts/*.txt'
+    train_x_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_train/img/*.png'
+    train_y_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_train/label/*.png'
+    train_mask_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/train/all_gts/*.txt'
     # paths for synthetic test Dataset
-    test_x_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-EnsText/syn_test/img/*.png'
-    test_y_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-EnsText/syn_test/label/*.png'
-    test_mask_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-EnsText/test/all_gts/*.txt'
+    test_x_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_test/img/*.png'
+    test_y_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_test/label/*.png'
+    test_mask_syn = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/test/all_gts/*.txt'
 
     # paths for SCUT-real train Dataset
     train_x = 'Data/real/train/all_images/*.jpg'
