@@ -20,7 +20,7 @@ class Config:
 
 
     # train conig
-    batch_size = 8
+    batch_size = 1
     epochs=400
     saved_model_path = 'saved_model/'
     num_worker=1
