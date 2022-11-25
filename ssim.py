@@ -1,6 +1,7 @@
 from math import exp
 from torch.autograd import Variable
 import torch.nn.functional as F3
+import torch
 
 def gaussian(window_size, sigma):
     gauss = torch.Tensor([exp(-(x - window_size//2)**2/float(2*sigma**2)) for x in range(window_size)])
