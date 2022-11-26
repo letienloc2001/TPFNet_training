@@ -20,7 +20,7 @@ class Config:
 
 
     # train conig
-    batch_size = 16
+    batch_size = 8
     epochs=400
     saved_model_path = '/content/drive/Shareddrives/HCMUT/DACN/TPF_saved_model/'
     num_worker=1
