@@ -17,12 +17,20 @@ class backbone(nn.Module):
     self.l6 = nn.Sequential(*list(model.features[6][:2]))
 
   def forward(self, x):
+    print(type(x))
+    print('x', x)
     x1 = self.l1(x)
+    print('x1', x1)
     x2 = self.l2(x1)
+    print('x2', x2)
     x3 = self.l3(x2)
+    print('x3', x3)
     x4 = self.l4(x3)
+    print('x4', x4)
     x5 = self.l5(x4)
+    print('x5', x5)
     x6 = self.l6(x5)
+    print('x6', x6)
     return [x1, x2, x3, x5, x6]
 
 
