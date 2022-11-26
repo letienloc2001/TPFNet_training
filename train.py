@@ -54,18 +54,18 @@ def train(model, epochs, train_loader, test_loader, optimizer, critean, device):
         print('VAL SSIM: ', sum(mss_val)/len(mss_val))
 
         if current_psnr < sum(ps_test)/len(ps_test):
-          checkpoint = {
-          'weights': model.state_dict(),
-          'optimizer':optimizer.state_dict()
-          } 
+          # checkpoint = {
+          # 'weights': model.state_dict(),
+          # 'optimizer':optimizer.state_dict()
+          # } 
           print("saving best one.....")
-          torch.save(checkpoint, C.saved_model_path + 'weight_best.pth')
+          torch.save(model.state_dict(), C.saved_model_path + 'weight_best.pth')
           current_psnr = sum(ps_test)/len(ps_test)
 
           
         if (epoch+1) % 10 == 0:
-          checkpoint = {
-          'weights': model.state_dict(),
-          'optimizer':optimizer.state_dict()
-          } 
-          torch.save(checkpoint, C.saved_model_path+"checkpoint_SCUT{}.pth".format(epoch+1))
+          # checkpoint = {
+          # 'weights': model.state_dict(),
+          # 'optimizer':optimizer.state_dict()
+          # } 
+          torch.save(model.state_dict(), C.saved_model_path+"checkpoint_SCUT{}.pth".format(epoch+1))
