@@ -1,12 +1,12 @@
 class Config:
     # paths for synthetic train dataset
-    train_x = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_train/img/*.png'
-    train_y = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_train/label/*.png'
-    train_mask = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_train/bbox/*.txt'
+    train_x = '/content/drive/Shareddrives/HCMUT/Thesis/data/places265/village/input/train/*.jpg'
+    train_y = '/content/drive/Shareddrives/HCMUT/Thesis/data/places265/village/target/train/*.jpg'
+    # train_mask = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_train/bbox/*.txt'
     # paths for synthetic test Dataset
-    test_x = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_test/img/*.png'
-    test_y = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_test/label/*.png'
-    test_mask = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_test/bbox/*.txt'
+    test_x = '/content/drive/Shareddrives/HCMUT/Thesis/data/places265/village/input/val/*.jpg'
+    test_y = '/content/drive/Shareddrives/HCMUT/Thesis/data/places265/village/target/val/*.jpg'
+    # test_mask = '/content/drive/Shareddrives/HCMUT/DACN/data_collection/SCUT-8K/syn_test/bbox/*.txt'
 
     # # paths for SCUT-real train Dataset
     # train_x = 'Data/real/train/all_images/*.jpg'
@@ -22,8 +22,8 @@ class Config:
     # train conig
     batch_size = 8
     epochs=400
-    saved_model_path = '/content/drive/Shareddrives/HCMUT/DACN/TPF_saved_model/'
-    num_worker=1
+    saved_model_path = '/content/drive/Shareddrives/HCMUT/Thesis/checkpoint/TPFNet/'
+    num_worker=4
     lr=1e-4
 
     
